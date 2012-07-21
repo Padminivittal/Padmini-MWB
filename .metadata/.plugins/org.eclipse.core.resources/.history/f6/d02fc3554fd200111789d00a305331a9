@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$().ready(function(){
+	$("input:text").each(function(){
+		$(this).on("keyup",function()
+		{
+			if($(this).val().length==3)
+			$(this).next("input:text").focus();
+		});	
+	});
+	$("input:text").attr("maxlength","3");
+	$("#btnClick").on("click",function(){
+		$("input:text").attr("disabled","disabled");
+	});
+});
+	
+</script>
+<head>
+</head>
+<body>
+<label for="txt1">IP Address</label>
+<input type="text" class="ipaddress" id="txt1"/>
+<input type="text" id="txt2" class="ipaddress" />
+<input type="text" id="txt3" class="ipaddress" />
+<input type="text" id="txt4" class="ipaddress" />
+<input type="button" value="Submit" id="btnClick"/>
+</body>
+</html>

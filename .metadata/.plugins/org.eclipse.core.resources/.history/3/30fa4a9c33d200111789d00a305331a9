@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+var  functionarray=[]; 
+function add()
+{
+	var total = 0;
+	for(var i=0;i<arguments.length;i++){
+		total += arguments[i];
+	}
+	alert(total);
+	return total;
+}
+function subract()
+{
+	var total = 0;
+	total = arguments[0];
+	for(var i=1;i<=arguments.length;i++){
+		
+		total -= arguments[i];
+	}
+	alert(total);
+	return total;
+}
+function addOperations()
+{
+	var add =document.getElementById("add");
+	var sub =document.getElementById("subract");
+	alert(functionarray);
+	if(add.checked)
+		functionarray.push(subract)	;
+	else
+		functionarray.pop(subract)	;
+	
+	if(sub.checked)
+		functionarray.push(add)	;
+	else
+		functionarray.pop(add)	;
+	
+}
+function calculate()
+{
+	for(var i=0;i<=functionarray.length;i++)
+	{
+		doOperation(functionarray[i]);
+	};
+	
+}
+function doOperation(operation)
+{
+	operation();
+	};
+</script>
+<title>MWB DAY 1</title>
+</head>
+<body>
+<h1>DAY 1</h1>
+<label for="number1" >Number1 </label>
+<input type="number" id="number1"/>
+<label for="number2" >Number2 </label>
+<input type="number" id="number2"/>
+<input type="checkbox" id="add" onchange="addOperations()">Add</input>
+<input type="checkbox" id="subract" onchange="addOperations()">Subract</input>
+<input type="submit"id="calculate"  onclick="calculate()" value="Calculate Results" /></input>
+</body>
+</html>

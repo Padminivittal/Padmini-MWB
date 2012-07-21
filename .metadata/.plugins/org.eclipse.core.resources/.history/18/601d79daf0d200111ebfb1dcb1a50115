@@ -1,0 +1,4 @@
+<%
+String country=request.getParameter("country");
+
+%>

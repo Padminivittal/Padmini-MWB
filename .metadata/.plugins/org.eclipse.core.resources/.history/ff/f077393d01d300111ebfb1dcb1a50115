@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="jquery.mobile-1.1.0.css"/>
+<script src="jquery-1.7.2.js"></script>
+<script src="jquery.mobile-1.1.0.js"></script>
+<title>JQuery Mobile Day 2 Lab</title>
+</head>
+<body>
+<div data-role="page">Page I</div>
+<div data-role="page">Page II</div>
+<div data-role="page">Page III</div>
+<div data-role="page">Page IV</div>
+</body>
+</html>

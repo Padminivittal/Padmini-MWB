@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+function sendAjaxRequest()
+{
+	$.ajax({
+		url:server.jsp,
+		dataType : "json",
+		data:{
+			name:$("nameText").val()
+		},
+		type:	"GET"
+		success:function (response){
+			$("#resultsH2").text(response);
+		}
+	});
+	}
+$().ready(dunction{
+	$("#btnClick").on("click",sendAjaxRequest);
+	
+});</script>
+<title>Insert title here</title>
+</head>
+<body>
+<label for="nametext">NAME</label>
+<input type="text" id="nametext"/>
+<input type="button" value="Click" id="btnClick"/>
+<h2 id="resultsH2"></h2>
+</body>
+</html>

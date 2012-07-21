@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<title>
+Day 1 -Lab 3
+</title>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$().ready(function(){
+	$("input:text").each(function(){
+		$(this).on("keyup",function()
+		{
+			if($(this).val().length==3)
+			$(this).next("input:text").focus();
+		});	
+	});
+	$("input:text").attr("maxlength","3").css("width","30");
+	//$("input:text").css("width","30");
+	$("#btnClick").on("click",function(){
+		$("input:text").attr("disabled","disabled");
+	});
+});
+	
+</script>
+<style>
+input:focus
+{
+background:lightblue;
+}
+</style>
+<head>
+</head>
+<h1>Jquery focus, next example</h1>
+<body>
+<label for="txt1">IP Address</label>
+<input type="text" class="ipaddress" id="txt1"/>
+<input type="text" id="txt2" class="ipaddress" />
+<input type="text" id="txt3" class="ipaddress" />
+<input type="text" id="txt4" class="ipaddress" />
+</br>
+<input type="button" value="Submit" id="btnClick"/>
+</body>
+</html>

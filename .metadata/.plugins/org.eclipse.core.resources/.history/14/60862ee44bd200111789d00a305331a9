@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>DAY 1 -LAB 3</title>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$().ready(function()
+		{
+	$("input:text").on("keyup",function(){
+		alert(this);
+		$(this).next().foucs();
+		//$("#txt2").focus();
+	});
+		});
+</script>
+<style>
+.ipaddress{
+width:50px;
+}
+</style>
+</head>
+<body>
+<label for="txt1" value="IP Address"></label>
+<input type="text" class="ipaddress" id="txt1">
+<input type="text" id="txt2" class="ipaddress" >
+<input type="text" id="txt3" class="ipaddress" >
+<input type="text" id="txt4" class="ipaddress" >
+<input type="button" value="Submit" id="btnClick"/>
+</body>
+</html>

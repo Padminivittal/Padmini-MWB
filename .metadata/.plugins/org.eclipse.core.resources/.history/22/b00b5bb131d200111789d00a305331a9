@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+var  functionarray=[];
+function add()
+{
+	var total = 0;
+	for(var i=0;i<arguments.length;i++){
+		total += arguments[i];
+	}
+	alert(total);
+	return total;
+};
+function subract()
+{
+	var total = 0;
+	total = arguments[0];
+	for(var i=1;i<=arguments.length;i++){
+		
+		total -= arguments[i];
+	}
+	alert(total);
+	return total;
+};
+function addOperations()
+{
+	var add =document.getElementById("add");
+	var sub =document.getElementById("subract");
+	
+	if(add.checked)
+		functionarray.push(subract)	;
+	else
+		functionarray.pop(subract)	;
+	
+	if(sub.checked)
+		functionarray.push(add)	;
+	else
+		functionarray.pop(add)	;
+	};
+};
+function calculate()
+{
+	for(var i=0;i<=functionarray.length;i++)
+	{
+		doOperation(functionarray[i]);
+	};
+	
+};
+function doOperation(operation)
+{
+	operation();
+	};
+</script>
+<title>MWB DAY 1</title>
+</head>
+<body>
+<h1>DAY 1</h1>
+<input type="number" id="number1"/>
+<input type="number" id="number2"/>
+<input type="checkbox" id="add" onchange="addOperations()"/>
+<input type="checkbox" id="subract" onchange="addOperations()"/>
+<input type="submit"id="calculate"  onclick="calculate()"   /></input>
+</body>
+</html>

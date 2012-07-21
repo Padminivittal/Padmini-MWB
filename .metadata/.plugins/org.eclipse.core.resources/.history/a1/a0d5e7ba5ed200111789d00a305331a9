@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<title>
+Day 1 -Lab 5
+</title>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+function sendSimpleAjaxCall()
+{
+	$.ajax({
+		url:"simpleText.txt",
+		success:function(response){
+			alert(response);
+		},
+		error:function(error){
+			alert("wrong call");
+		}
+	});
+	}
+function sendSimpleAjaxCallTojsp()
+{
+	$.ajax({
+			url: "ajaxSample.jsp",
+			data:{
+				name:${"#nameText"}.val()
+				},
+				type:	"GET",
+			success:function(response)
+			{
+				alert(response);
+			},
+			error:function(error)
+			{
+			alert("wrong call"_error.statusText);
+			}
+			});
+}
+$().ready(function(){
+	$("#btnClick").on("click",sendSimpleAjaxCall())
+	$("#btnSimpleClick").on("click",sendSimpleAjaxCallTojsp())
+});
+	
+</script>
+<style>
+input:focus
+{
+background:lightblue;
+}
+</style>
+<head>
+</head>
+<h1>Simple ajax call</h1>
+<body>
+<input type="button" value="Make a Call" id="btnClick"/>
+<br>
+<input type="text" id="nameText"/>
+<br>
+<input type="button" value="Make a Call" id="btnClick"/>
+</body>
+</html>

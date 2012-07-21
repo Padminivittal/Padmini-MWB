@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="js/guessgame.js"></script>
+<script>
+
+function GuessNumber()
+{
+	var number=document.getElementById("number");
+	var results=document.getElementById("results");
+	var game=new GuessNumberGame();
+	var message=game.IsCorrectNumber(number.value);
+	results.innerHTML = "<h2>"+message+"</h2>";
+}
+
+</script>
+<title>Day 1- Lab 2 </title>
+</head>
+<body>
+<h1>
+Guess Game-Example for closures-Javascript
+</h1>
+<label for="number" >Guess the Number</label>
+<input type="number" min="0" max="100" id="number" >
+<button id="Guess" onclick="GuessNumber()" >Guess</button>
+<div id="results" ></div>
+</body>
+</html>

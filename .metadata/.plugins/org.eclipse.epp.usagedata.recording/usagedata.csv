@@ -1,0 +1,84 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342854647453
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342854664156
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342854664343
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1342854713578
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1342854713812
+error,log,,,"Errors occurred during the build.",1342854713812
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342854713812
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342854715812
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342854716312
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342854727500
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1342854739750
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1342854747593
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1342854751265
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.lineStart",1342854752328
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.lineEnd",1342854752562
+error,log,,,"IStructuredDocumentRegion management failed.",1342854752781
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342854752796
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.lineEnd",1342854756906
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342854757250
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342854787390
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1342854814015
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1342854816140
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1342854818640
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1342854820671
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.lineStart",1342854828546
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.lineEnd",1342854828890
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342854829156
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.lineEnd",1342854831109
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342854831500
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.lineEnd",1342854874218
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342854894625
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342854899093
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1342854909890
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1342854912109
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342854924437
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1342854933203
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1342854933453
+error,log,,,"Errors occurred during the build.",1342854933453
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342854933453
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342854934484
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342854935187
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342854945750
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342854965218
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.lineStart",1342854966953
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1342854978390
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1342854981203
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1342854984781
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1342855003640
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342855010296
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342855010875
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1342855043812
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1342855044062
+error,log,,,"Errors occurred during the build.",1342855044062
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855044062
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855045250
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1342855216562
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855255953
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855260203
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.lineEnd",1342855316187
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1342855342531
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1342855342781
+error,log,,,"Errors occurred during the build.",1342855342796
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855342796
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855344562
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855345250
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855378859
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855418531
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855487187
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855491515
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855544546
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1342855546656
+closed,editor,org.eclipse.wst.html.ui,1.0.602.v201202091936,"org.eclipse.wst.html.core.htmlsource.source",1342855546656
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855548656
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855551687
+started,bundle,org.eclipse.wst.jsdt.debug.core,2.0.101.v201201112313,"org.eclipse.wst.jsdt.debug.core",1342855551734
+closed,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342855551796
+stopped,bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.700.v201104070312,"org.eclipse.jst.ws.axis.creation.ui",1342855552109
+stopped,bundle,org.eclipse.jst.ws.axis.consumption.ui,1.0.505.v201004211805,"org.eclipse.jst.ws.axis.consumption.ui",1342855552140
+stopped,bundle,org.eclipse.jst.ws.axis.consumption.core,1.0.407.v201104071820,"org.eclipse.jst.ws.axis.consumption.core",1342855552140
+stopped,bundle,org.eclipse.jst.ws.axis2.creation.ui,1.0.104.v201004211805,"org.eclipse.jst.ws.axis2.creation.ui",1342855552140
+stopped,bundle,org.eclipse.jst.ws.axis2.consumption.ui,1.0.103.v201004211805,"org.eclipse.jst.ws.axis2.consumption.ui",1342855552140
+stopped,bundle,org.eclipse.jst.ws.axis2.creation.core,1.0.106.v201004211805,"org.eclipse.jst.ws.axis2.creation.core",1342855552140
+stopped,bundle,org.eclipse.jst.ws.axis2.consumption.core,1.0.105.v201004211805,"org.eclipse.jst.ws.axis2.consumption.core",1342855552140

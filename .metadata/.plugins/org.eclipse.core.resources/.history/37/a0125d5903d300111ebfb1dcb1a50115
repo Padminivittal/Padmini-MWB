@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="jquery.mobile-1.1.0.css"/>
+<script src="jquery-1.7.2.js"></script>
+<script src="jquery.mobile-1.1.0.js"></script>
+<title>JQuery Mobile Day 2 Lab</title>
+</head>
+<body>
+<h1>JQuery Mobile Day 2 Lab</h1>
+
+<div data-role="page">
+<div data-role="header" data-theme="c">
+<p>
+Welcome to Jquery Mobile Intorduction
+</p>
+</div>
+<div data-role="content">
+<p>
+You are working with Jquery Mobile
+</p>
+</div>
+<div data-role="footer" data-theme="c">
+<p>
+See you soon!!
+</p>
+</div>
+</div>
+<div data-role="page">Page II</div>
+<div data-role="page">Page III</div>
+<div data-role="page">Page IV</div>
+</body>
+</html>

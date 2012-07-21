@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+function sendAjaxRequest()
+{
+	$.ajax({
+		url:"Countries.jsp",
+		dataType : "json",
+
+		success: function (response){
+			for(var i=0;i<response.countries.length;i++)
+			{
+				$("#countries").append("<option value="+response.countries[i]+"/>");
+			}
+		}
+	});
+	}
+$().ready(function(){
+	sendAjaxRequest();
+	
+});</script>
+<title>Insert title here</title>
+</head>
+<body>
+<input list="countries" />
+
+<datalist id="countries">
+  
+</datalist> 
+</body>
+</html>

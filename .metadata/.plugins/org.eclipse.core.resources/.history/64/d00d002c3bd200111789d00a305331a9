@@ -1,0 +1,19 @@
+function GuessNumberGame(number)
+{
+	alert("inside");
+	if(GuessNumber.GuessAttempt)
+		GuessNumber.GuessAttempt++;
+		else
+			GuessNumber.GuessAttempt=1;
+	if(!GuessNumber.RandomNumber)
+		GuessNumber.RandomNumber=Math.round(Math.random()*100);
+this.IsCorrectNumber=function()
+{
+if (GuessNumber.RandomNumber- number <0)	
+	return "Aim lower";
+else if (GuessNumber.RandomNumber- number>0)
+	return "Aim Higher";
+else if (GuessNumber.RandomNumber- number==0)
+	return "You have gussed in "+ GuessNumber.GuessAttempt + "attempts";
+};
+}

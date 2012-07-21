@@ -1,0 +1,4 @@
+<%@page import="java.sql.Date"%>
+<%=
+new Date()
+%>

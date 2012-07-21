@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="js/guessgame.js"></script>
+<script>
+
+function GuessNumber()
+{
+	var number=document.getElementById("number");
+	alert(GuessNumberGame(number.value));
+}
+
+</script>
+<title>Day 1- Lab 2 </title>
+</head>
+<body>
+<label for="number" >Guess the Number</label>
+<input type="number" min="0" max="100" id=number >
+<button id="Guess" onclick="GuessNumber()" >Guess</button>
+</body>
+</html>

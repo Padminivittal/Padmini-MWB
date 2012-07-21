@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+//var cities=[];
+//var countries=[];
+function sendAjaxRequest()
+{
+	$.ajax({
+		url:"Countries.jsp",
+		dataType : "json",
+
+		success: function (response){
+			for(var i=0;i<response.countries.length;i++)
+			{
+				countries[i]=response.countries[i]
+				$("#country").append("<option value="+response.countries[i]+"/>");
+			}
+		}
+	});
+}
+	function getCities()
+	{
+		alert("inside");
+		 $.ajax({
+			url:"Citis.jsp",
+			dataType : "json",
+			data:{
+				country:$("#country").val()
+			},
+			success: function (response){
+				for(var i=0;i<response.cities.length;i++)
+				{
+					cities[$("#country").val()]=response.cities[i];
+					$("#cities").append("<option value="+response.cities[i]+"/>");
+				}
+			}
+		}); 
+		
+	}
+$().ready(function(){
+	sendAjaxRequest();
+	$("#country").on("blur",getCities());
+	
+});</script>
+<title>Insert title here</title>
+</head>
+<body>
+
+Countries: <Select id="country"   ></select>
+<datalist id="countries">
+</datalist> 
+City: <Select id="cities"   ></select> 
+<datalist id="cities">
+</datalist> 
+</body>
+</html>

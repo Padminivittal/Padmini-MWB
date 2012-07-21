@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+var  functionarray=[]; 
+function add()
+{
+	var total = 0;
+	for(var i=0;i<arguments.length;i++){
+		total += arguments[i];
+	}
+	//alert(total);
+	return total;
+}
+function subract()
+{
+	var total = 0;
+	total = arguments[0];
+	for(var i=1;i<=arguments.length;i++){
+		
+		total -= arguments[i];
+	}
+	//alert(total);
+	return total;
+}
+function addOperations()
+{
+	var add =document.getElementById("add");
+	if(add.checked)
+		functionarray["add"]="add"	;
+	else
+		functionarray["add"]=null;
+	
+}
+function subOperations()
+{
+	
+	var sub =document.getElementById("subract");
+	
+	if(sub.checked)
+		functionarray["sub"]="subract"	;
+	else
+		functionarray["sub"]=null;
+	
+	
+}
+function calculate()
+{
+	alert("calculate");
+	for(var i=0;i<=functionarray.length;i++)
+	{
+		if(functionarray[i]!=null)
+			
+		doOperation(functionarray[i]);
+	};
+	
+}
+function doOperation(operation)
+{
+	var num1 =document.getElementById("number1");
+	var num2 =document.getElementById("number2");
+	//alert(operation);
+	operation(num1.value,num2.value);
+	};
+</script>
+<title>MWB DAY 1</title>
+</head>
+<body>
+<h1>DAY 1</h1>
+<label for="number1" >Number1 </label>
+<input type="number" id="number1"/>
+<label for="number2" >Number2 </label>
+<input type="number" id="number2"/>
+<label for="add" >Add </label>
+<input type="checkbox" id="add" onchange="addOperations()"/>
+<label for="subract" >Subract </label>
+<input type="checkbox" id="subract" onchange="subOperations()"/>
+<button id="calculate" onclick="calculate()">Calcualate</button>
+<div id="results">
+
+</div>
+</body>
+</html>

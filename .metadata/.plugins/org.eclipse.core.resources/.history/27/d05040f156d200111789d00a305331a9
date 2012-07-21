@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<title>
+Day 1 -Lab 3
+</title>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$().ready(function(){
+	$("#btnAdd").on("click", function()
+	{
+		$("#tblpeople").append("<tr><td>"+ $("#name").val()+"</td><td>"+$("#age").val()+"</td><td><input type='checkbox' id='check'/></td><tr>")
+		//$("#remove").html("<input type='button' value='Remove' id='btnremove'/>")
+	});
+	$("#btnremove").on("click", function()
+			{
+		alert('test');	
+		$("#check :checked").each(function()
+				{
+			alert($(this).parents('tr'));		
+			$(this).parents('tr').remove();
+				});
+			});
+});
+	
+</script>
+<style>
+input:focus
+{
+background:lightblue;
+}
+</style>
+<head>
+</head>
+<h1>Jquery add controls dynamically</h1>
+<body>
+<label for="name">Name:</label>
+<input type="text"  id="name"/>
+<br>
+<label for="age">Age</label>
+<input type="text" id="age"  />
+<br>
+<input type="button" value="Add" id="btnAdd"/>
+<br>
+<div id="People">
+<table id="tblpeople" border=1>
+<tr>
+<th>
+Name
+</th>
+<th>
+Age
+</th>
+<th>
+Remove
+</th>
+</tr>
+</table>
+<br>
+<input type="button" value="Remove" id="btnremove"/>
+</div>
+<div id="remove">
+
+</div>
+</body>
+</html>
